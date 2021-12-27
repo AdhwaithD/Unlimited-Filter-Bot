@@ -8,7 +8,7 @@ from pyrogram.errors import (FloodWait, PeerIdInvalid, UserIsBlocked, InputUserD
     
 ADMINS = [1921448473,1442587694]
 
-@Client.on_message(filters.private & filters.command('broadcast'), group=2)
+@trojanz.on_message(filters.private & filters.command('broadcast'), group=2)
 async def broadcast(client, message):
 
     if not message.from_user.id in ADMINS: return await message.reply_sticker("CAACAgUAAxkBAAEBLDphfSzNDHd5BpbV6dX-wbfTYhOGngAC_wIAAhx6cFWp_hhQj9wZ_R4E")
