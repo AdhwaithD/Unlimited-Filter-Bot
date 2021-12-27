@@ -1,10 +1,10 @@
 # Added By [@paulwalker_tg]
 
 import pymongo
-from bot import DB_URI
+from bot import DATABASE_URI
 
 
-dbclient = pymongo.MongoClient(DB_URI)
+dbclient = pymongo.MongoClient(DATABASE_URI)
 database = dbclient["CHATS"]
 user_col = database['USERS']
 
